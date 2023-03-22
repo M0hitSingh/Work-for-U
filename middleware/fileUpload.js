@@ -6,7 +6,7 @@ const multer = require("multer");
 
 var storage = multer.diskStorage({
     destination:function(req ,file ,callback){
-        var dir = path.join(__dirname,'./../public/WebsiteSS')
+        var dir = path.join(__dirname,'./../public')
         if(!fs.existsSync(dir)){
             fs.mkdirSync(dir);
         }
